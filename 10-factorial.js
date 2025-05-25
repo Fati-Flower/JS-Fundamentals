@@ -1,7 +1,7 @@
 
 
 function factorial(n) {
-  if (n < 2) {
+  if (isNaN(n) || n < 2) {
     return 1;
   }
   return n * factorial(n - 1);
